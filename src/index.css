@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --default-font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --default-font-size: 18px;
+}
