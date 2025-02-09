@@ -14,6 +14,7 @@ export function ColorOptions({ options, onGuess, disabled }: ColorOptionsProps) 
           style={{ backgroundColor: color }}
           onClick={() => onGuess(color)}
           disabled={disabled}
+          data-testid="colorOption"
         ></button>
       ))}
     </div>

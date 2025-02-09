@@ -46,8 +46,8 @@ useEffect(() => {
 
   return (
     <div className="flex flex-col items-center justify-center text-center min-h-screen bg-gray-100 p-4">
-      <h1 className="text-3xl font-bold mb-2">Color Guess Game</h1>
-      {statusMessage && <p className="mt-4 text-lg font-semibold">{statusMessage}</p>}
+      <h1 data-testid="gameInstructions" className="text-3xl font-bold mb-2">Guess the Color!</h1>
+      <p data-testid="gameStatus" className="mt-4 text-lg font-semibold">{statusMessage}</p>
       <ColorTarget color={targetColor} />
       <ColorOptions options={colorOptions} onGuess={handleGuess} disabled={gameStatus === "lost"} />
       <ScoreBox score={score} />
